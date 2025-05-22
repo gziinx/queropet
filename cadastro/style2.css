@@ -1,126 +1,198 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      min-height: 100vh;
+      font-family: sans-serif;
+      background-color: #1c1c1c;
+      color: white;
+    }
+    html, body{
+      scroll-behavior: smooth;
   }
+    
+    .container {
+      display: flex;
+      min-height: 100vh;
+      background-image: url('../img/mulher-jovem-e-buldogue-frances-no-parque\ 1.png');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    
+    .left-side {
+      flex: 1;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: px 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+   
+    .logo {
+      width: 550px;
+      margin-top: 50px
+      
   
-  body {
-    font-family: sans-serif;
-    background-color: #1c1c1c;
-    color: white;
-  }
-  
-  .container {
-    display: flex;
-    height: 100vh;
-    background-image: url('../img/mulher-jovem-e-buldogue-frances-no-parque\ 1.png');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-  }
-  
-  .left-side {
-    flex: 1;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: px 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 500px;
+    }
+    
+    .description {
+      font-size: 29px;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    
+    .contact {
+      font-size: 43px;
+    }
+    .contact p{
+      font-weight: bold;
+    }
+    
+    .icons{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-content: space-between;
+      margin-top: 35px;
+    }
 
-  }
+    
+    .right-side {
+      flex: 1;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .form {
+      background-color: #ffe8c981;
+      padding: 40px 30px;
+      border-radius: 20px;
+      color: rgb(255, 255, 255);
+      width: 100%;
+      max-width: 400px;
+      overflow-y: auto;
+    }
+    
+    .form h2 {
+      width: 292px;
+    margin: 0 auto;
+      text-align: center;
+      margin-bottom: 20px;
+      background-color: #A46731;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    
+    .form label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    
+    .form input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 4px;
+      border-radius: 8px;
+      border: none;
+    }
+    .form select{
+      width: 100%;
+      padding: 10px;
+      margin-top: 4px;
+      border-radius: 8px;
+      border: none;
   
-  .description {
-    margin-bottom: 40px;
-    font-size: x-large; 
-    text-align: center;
-  }
-  
-  .contact {
-    font-size: xx-large;
-  }
-  
-  .icons{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-  
-  }
+    }
+    
+    .forgot {
+      font-size: 14px;
+      display: block;
+      margin-top: 10px;
+      color: #ffffff;
+      text-decoration: none;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid #A46731;
+    }
+    
+    .btn {
+      background-color: #A46731;
+      color: white;
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      font-size: larger;
+    }
+    
+    .register {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    a{
+      color: #ffffff;
+    }
 
-  
-  .right-side {
-    flex: 1;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .form {
-    background-color: #ffe8c981;
-    padding: 40px 30px;
-    border-radius: 20px;
-    color: rgb(255, 255, 255);
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    background-color: #A46731;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
-  }
-  
-  .form label {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-  }
-  
-  .form input {
-    width: 100%;
-    padding: 10px;
-    margin-top: 4px;
-    border-radius: 8px;
-    border: none;
-  }
-  
-  .forgot {
-    font-size: 14px;
-    display: block;
-    margin-top: 10px;
-    color: #ffffff;
-    text-decoration: none;
-    padding-bottom: 1rem;
-    border-bottom: 2px solid #A46731;
-  }
-  
-  .btn {
-    background-color: #A46731;
-    color: white;
-    width: 100%;
-    padding: 12px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    font-size: larger;
-  }
-  
-  .register {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 14px;
-  }
-  a{
-    color: #ffffff;
-  }
-  
+    .checkbox-container {
+      background-color: white;
+      padding: 10px;
+      border-radius: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      width: fit-content;
+      font-weight:normal;
+      color: black;
+      margin-top: 10px;
+    }
+
+    .checkbox-item {
+      display: flex;
+      gap: 8px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: small;
+      align-items: center;
+      justify-content: center;
+      
+
+    }
+
+    .checkbox-item input[type="checkbox"] {
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      border: none;
+      background-color: black;
+      border-radius: 4px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .checkbox-item input[type="checkbox"]:checked::after {
+      content: "✔";
+      color: white;
+      font-size: 14px;
+      position: absolute;
+      left: 3px;
+      top: 0px;
+      padding: 2px;
+    }
+    .biro{
+      margin-top: 14px;
+      height: 4px;
+      width: 100%;
+      background-color: #2B5235;
+
+    }

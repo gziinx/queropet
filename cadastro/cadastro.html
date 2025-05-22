@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>QueroPet - Login</title>
+  <title>QueroPet - cadastro</title>
   <link rel="stylesheet" href="style2.css" />
+  
 </head>
+
 <body>
+  
   <div class="container">
     <div class="left-side">
-      <img src="../img/ChatGPT Image 15 de mai. de 2025, 14_24_43 3.png" alt="Logo QueroPet" class="logo" />
+      
+      
+      <img src="../img/logo1.png" alt="Logo QueroPet" class="logo" />
       <p class="description">
-        QueroPet é uma plataforma <br> dedicada 
-         à adoção responsável de <br> cães e gatos.
-        Conectamos pets <br> que precisam de um 
-         lar a pessoas <br> prontas para amar.
+        QueroPet é uma plataforma <br> dedicada
+        à adoção responsável de <br> cães e gatos.
+        Conectamos pets <br> que precisam de um
+        lar a pessoas <br> prontas para amar.
         Adote, <br> transforme vidas!
       </p>
       <div class="contact">
@@ -28,25 +34,79 @@
 
     <div class="right-side">
       <form class="form">
-        <h2>Login</h2>
+        <h2>CADASTRO</h2>
         <label>Nome*</label>
         <input type="text" required />
-        
+
         <label>Email*</label>
         <input type="email" required />
-        
+
         <label>Senha*</label>
         <input type="password" required />
-        
+
         <label>Confirmar Senha*</label>
         <input type="password" required />
 
-        <a href="#" class="forgot">Esqueci minha senha</a>
+        <label>Palavra Chave*</label>
+        <input type="text" required />
 
-        <button type="submit" class="btn">Login</button>
-        <p class="register">Não possui registro? <a href="#">cadastre-se</a></p>
+        <label>Data de nascimento*</label>
+        <input type="date" required />
+
+        <label>CPF*</label>
+        <input type="number" required />
+
+        <label>Contato*</label>
+        <input placeholder="ex: (xx) xxxxx-xxxx" type="number" required />
+
+        <label>Contato reserva*</label>
+        <input placeholder="ex: (xx) xxxxx-xxxx" type="number" required />
+
+        <label>Estado*</label>
+        <select id="estado" required>
+          <option value="">Selecione um estado</option>
+        </select>
+
+        <label>CEP*</label>
+        <input type="number" required />
+
+        <label>Qual o seu interesse?*</label>
+        <div class="checkbox-container">
+          <label class="checkbox-item">
+            <input type="checkbox" checked>
+            Quero adotar
+          </label>
+      
+          <label class="checkbox-item">
+            <input type="checkbox" checked>
+            Quero Divulgar
+          </label>
+      
+          <label class="checkbox-item">
+            <input type="checkbox" checked>
+            Faço parte de uma ONG
+          </label>
+        </div>
+
+        <label>Caso faça parte de uma ONG, coloque no espaço abaixo seu site</label>
+        <input type="text"/>
+        
+        <label>Preferência de animal</label>
+        <select id="animal" required>
+          <option value="">Selecione um animal</option>
+        </select>
+
+          <div class="biro">
+
+          </div>        
+
+        <button type="submit" class="btn">Finalizar Cadastro</button>
+
       </form>
     </div>
+    
   </div>
+  <script src="bore.js"></script>
 </body>
+
 </html>
